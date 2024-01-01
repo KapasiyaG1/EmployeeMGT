@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>insertdata</servlet-name>
+        <servlet-class>controller.insertdata</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertData</servlet-name>
+        <servlet-class>controller.InsertData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateDataDisplay</servlet-name>
+        <servlet-class>controller.UpdateDataDisplay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertdata</servlet-name>
+        <url-pattern>/insertdata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertData</servlet-name>
+        <url-pattern>/InsertData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateDataDisplay</servlet-name>
+        <url-pattern>/UpdateDataDisplay</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
